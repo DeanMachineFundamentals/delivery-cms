@@ -22,14 +22,13 @@
 - The scope could be anything specifying the place of the commit change.
 
 ## Subject
-- The subject contains a succinct description of the change using the imperative mood in the subject line (e.g., "add" instead of "added" or "adds").
+- The subject contains a succinct description of the change using the imperative mood in the subject line.
 - Limit the subject line to 50 characters.
 
 ## Body
 - The body should include the motivation for the change and contrast this with the previous behavior.
 - Use the body to explain what and why (not how).
 - Separate the subject from the body with a blank line.
-- Limit the body to 72 characters.
 
 ## Public API Changes
 - If the commit introduces a change to the public API, include the following sections in the body:

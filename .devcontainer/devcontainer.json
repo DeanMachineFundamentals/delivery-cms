@@ -29,9 +29,9 @@
         "ms-python.python", // Python support
         "ms-vscode.vscode-typescript-next", // TypeScript support
         "dbaeumer.vscode-eslint", // Linting for JavaScript/TypeScript
+        "ms-vscode.azurecli", // Azure CLI integration
         "ms-azuretools.vscode-azurefunctions", // Azure Functions
         "ms-azuretools.vscode-bicep", // Bicep for infrastructure provisioning
-        "ms-vscode.azurecli", // Azure CLI integration
         "vscode.git", // Git support
         "github.copilot", // GitHub Copilot for AI-assisted coding
         "mhutchie.git-graph", // GitGraph for visualizing Git repositories
