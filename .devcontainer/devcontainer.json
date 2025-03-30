@@ -1,0 +1,49 @@
+{
+  "name": "Local Delivery CMS",
+  "build": { "dockerfile": "Dockerfile" },
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "9.0",
+      "additionalVersions": "lts"
+    },
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "installBicep": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-dotnettools.csharp", // C# support
+        "ms-dotnettools.csdevkit", // C# DevKit
+        "ms-python.python", // Python support
+        "ms-vscode.vscode-typescript-next", // TypeScript support
+        "dbaeumer.vscode-eslint", // Linting for JavaScript/TypeScript
+        "ms-azuretools.vscode-azurefunctions", // Azure Functions
+        "ms-azuretools.vscode-bicep", // Bicep for infrastructure provisioning
+        "ms-vscode.azurecli", // Azure CLI integration
+        "vscode.git", // Git support
+        "github.copilot", // GitHub Copilot for AI-assisted coding
+        "mhutchie.git-graph", // GitGraph for visualizing Git repositories
+        "ms-vscode.test-adapter-converter", // Enhanced testing capabilities
+        "github.vscode-github-actions", // GitHub Actions support
+        "codescene.codescene-vscode", // CodeScene for code analysis
+        "cschleiden.vscode-github-actions" // GitHub Actions support
+      ]
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  "remoteUser": "codespace"
+}
